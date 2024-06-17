@@ -20,4 +20,10 @@ public class Contact {
         private String contact_text;
 
 
+
+        public Contact(String contact_text) {
+                this.contact_text = contact_text;
+        }
+
+
     }

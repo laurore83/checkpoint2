@@ -17,4 +17,9 @@ public class ContactService {
 
     public Contact getContactById(Long id){return repository.findById(id)       .orElseThrow(() -> new RuntimeException(id + " not found"));
     }
+
+    public Contact add(Contact contact) {
+        return repository.save(contact);
+    }
+
 }
