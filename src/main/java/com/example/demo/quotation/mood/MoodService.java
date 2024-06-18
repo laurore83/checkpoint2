@@ -13,8 +13,8 @@ public class MoodService {
     @Autowired
     private MoodRepository repository;
 
-    public List<Mood> getAll() { return repository.findAll(); }
+        public List<Mood> getAll() { return repository.findAll(); }
 
-    public Mood getMoodById(Long id){return repository.findById(id)       .orElseThrow(() -> new RuntimeException(id + " not found"));
-    }
+        public Mood getMoodById(Long id){return repository.findById(id)       .orElseThrow(() -> new RuntimeException(id + " not found"));
+        }
 }

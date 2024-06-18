@@ -15,7 +15,7 @@ public class Quotation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name="quotation_author", columnDefinition = "VARCHAR(100)")
+    @Column(name="quotation_author", columnDefinition = "VARCHAR(255)")
     private String quotation_author;
 
     @Column(name="quotation_text", columnDefinition = "VARCHAR (250)")
